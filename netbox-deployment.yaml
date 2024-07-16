@@ -30,10 +30,10 @@ spec:
         envFrom:
           - configMapRef:
               name: netbox-configmap
-        lifecycle: # Will run the post-startup scripts detailed in netbox-startup-configmap.yaml
-          postStart:
-            exec:
-              command:
+        #lifecycle: # Will run the post-startup scripts detailed in netbox-startup-configmap.yaml
+          #postStart:
+          #  exec:
+            #  command:
             #    - /bin/sh
             #    - -c
             #    - >
