@@ -61,10 +61,10 @@ spec:
         - name: redis-password
           mountPath: /run/secrets/redis_password
           subPath: redis_password
-        - name: secret-key
-          mountPath: /run/secrets/secret_key
-          subPath: secret_key
-          readOnly: true
+        #- name: secret-key
+        #  mountPath: /run/secrets/secret_key
+        #  subPath: secret_key
+        #  readOnly: true
         - name: superuser-api-token
           mountPath: /run/secrets/superuser_api_token
           subPath: superuser_api_token
