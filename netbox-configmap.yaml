@@ -8,7 +8,7 @@ data:
   #changeme
   ALLOWED_HOSTS: '*'
   CHANGELOG_RETENTION: "90"
-  DB_HOST: cluster1-pgbouncer
+  DB_HOST: cluster1-pgbouncer.postgres-operator.svc
   DB_NAME: netbox
   DB_USER: pguser
   EMAIL_FROM: netbox@sentracam.com
