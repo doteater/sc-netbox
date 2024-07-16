@@ -34,11 +34,11 @@ spec:
           postStart:
             exec:
               command:
-                - /bin/sh
-                - -c
-                - >
-                  bash /home/start-rqworker.sh &&
-                  bash /home/nginx-caching-fix.sh
+            #    - /bin/sh
+            #    - -c
+            #    - >
+            ##      bash /home/start-rqworker.sh &&
+            ##      bash /home/nginx-caching-fix.sh
             ##          bash /home/install-plugins.sh &&
         volumeMounts:
         # Mounting secrets for netbox and other related components
