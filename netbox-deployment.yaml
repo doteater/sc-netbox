@@ -42,22 +42,22 @@ spec:
                   bash /home/nginx-caching-fix.sh
         volumeMounts:
         # Mounting secrets for netbox and other related components
-        - name: auth-ldap-bind-password
-          mountPath: /run/secrets/auth_ldap_bind_password
-          subPath: auth_ldap_bind_password
-          readOnly: true
+        #- name: auth-ldap-bind-password
+        #  mountPath: /run/secrets/auth_ldap_bind_password
+        #  subPath: auth_ldap_bind_password
+        #  readOnly: true
         - name: db-password
           mountPath: /run/secrets/db_password
           subPath: db_password
           readOnly: true
-        - name: email-password
-          mountPath: /run/secrets/email_password
-          subPath: email_password
-          readOnly: true
-        - name: napalm-password
-          mountPath: /run/secrets/napalm_password
-          subPath: napalm_password
-          readOnly: true
+        #- name: email-password
+        #  mountPath: /run/secrets/email_password
+        #  subPath: email_password
+        #  readOnly: true
+        #- name: napalm-password
+        #  mountPath: /run/secrets/napalm_password
+        #  subPath: napalm_password
+        #  readOnly: true
         - name: redis-password
           mountPath: /run/secrets/redis_password
           subPath: redis_password
