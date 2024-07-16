@@ -167,12 +167,12 @@ spec:
           items:
           - key: redis-password
             path: redis_password
-      - name: secret-key
-        secret:
-          secretName: netbox-secret
-          items:
-          - key: secret_key
-            path: secret_key
+      #- name: secret-key
+      #  secret:
+      #    secretName: netbox-secret
+      #    items:
+      #    - key: secret_key
+      #      path: secret_key
       - name: superuser-password
         secret:
           secretName: netbox-secret
