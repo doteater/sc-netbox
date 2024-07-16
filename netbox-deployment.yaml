@@ -37,7 +37,7 @@ spec:
                 - /bin/sh
                 - -c
                 - >
-                  bash /home/install-plugins.sh &&
+        ##          bash /home/install-plugins.sh &&
                   bash /home/start-rqworker.sh &&
                   bash /home/nginx-caching-fix.sh
         volumeMounts:
