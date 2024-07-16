@@ -78,12 +78,12 @@ spec:
         #- name: ldap-config # Allows for LDAP authentication to work
         #  subPath: ldap_config.py
         #  mountPath: /opt/netbox/netbox/netbox/ldap_config.py
-        - mountPath: /etc/netbox/config/netbox-plugins.py
-          name: netbox-plugins
-          subPath: netbox-plugins.py
-        - mountPath: /home/install-plugins.sh
-          name: install-plugins
-          subPath: install-plugins.sh
+        #- mountPath: /etc/netbox/config/netbox-plugins.py
+        #  name: netbox-plugins
+        #  subPath: netbox-plugins.py
+        #- mountPath: /home/install-plugins.sh
+        #  name: install-plugins
+        #  subPath: install-plugins.sh
         - mountPath: /home/start-rqworker.sh
           name: start-rqworker
           subPath: start-rqworker.sh
@@ -112,12 +112,12 @@ spec:
           items:
           - key: "netbox-plugins.py"
             path: "netbox-plugins.py"
-      - name: install-plugins
-        configMap:
-          name: startup-configmap
-          items:
-          - key: "install-plugins.sh"
-            path: "install-plugins.sh"
+      #- name: install-plugins
+      #  configMap:
+      #    name: startup-configmap
+      #    items:
+      #    - key: "install-plugins.sh"
+      #      path: "install-plugins.sh"
       - name: start-rqworker
         configMap:
           name: startup-configmap
