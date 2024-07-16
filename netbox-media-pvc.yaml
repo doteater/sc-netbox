@@ -5,7 +5,8 @@ metadata:
   labels:
     name: netbox-media-pvc
 spec:
-  ### accessModes:
+  accessModes:
+    - ReadWriteOnce
   ### - ReadWriteMany #put back when we move to ceph storage
   resources:
     requests:
