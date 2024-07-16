@@ -10,4 +10,4 @@ spec:
   resources:
     requests:
       storage: 1Gi
-  ##storageClassName: rook-cephfs #changeme
+  storageClassName: local-path #removing doesn't use default for some reason?
