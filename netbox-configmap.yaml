@@ -30,7 +30,7 @@ data:
   SUPERUSER_EMAIL: admin@sentracam.com
   SUPERUSER_NAME: admin
   MAINTENANCE_MODE: 'False'
-  DEBUG: 'False'
+  DEBUG: 'True'
   #REMOTE_AUTH_ENABLED: 'True'
   #REMOTE_AUTH_AUTO_CREATE_USER: 'True'
   # Regular LDAP Backend
