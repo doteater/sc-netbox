@@ -39,7 +39,7 @@ data:
   #REMOTE_AUTH_BACKEND: 'django3_saml2_nbplugin.backends.SAML2CustomAttrUserBackend'
   REMOTE_AUTH_HEADER: 'HTTP_REMOTE_USER'
   #REMOTE_AUTH_DEFAULT_GROUPS: 'sso-default-user' #changeme
-  DB_WAIT_DEBUG: 1
+  DB_WAIT_DEBUG: "1"
 
   # LDAP configuration against Microsoft Acive Directory
   # For more information around LDAP, see https://netbox.readthedocs.io/en/stable/installation/4-ldap/
