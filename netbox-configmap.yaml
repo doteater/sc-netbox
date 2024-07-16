@@ -11,6 +11,7 @@ data:
   DB_HOST: netbox-pgbouncer.postgres-operator.svc
   DB_NAME: netbox
   DB_USER: netbox
+  DB_SSLMODE: require
   EMAIL_FROM: netbox@sentracam.com
   EMAIL_PORT: "25"
   EMAIL_SERVER: localhost
