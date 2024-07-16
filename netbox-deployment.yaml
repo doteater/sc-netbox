@@ -75,9 +75,9 @@ spec:
         # Persistent Volume paths
         - name: netbox-media-files # Allows for multiple replicas of the netbox pod to be available
           mountPath: /opt/netbox/netbox/media
-        - name: ldap-config # Allows for LDAP authentication to work
-          subPath: ldap_config.py
-          mountPath: /opt/netbox/netbox/netbox/ldap_config.py
+        #- name: ldap-config # Allows for LDAP authentication to work
+        #  subPath: ldap_config.py
+        #  mountPath: /opt/netbox/netbox/netbox/ldap_config.py
         - mountPath: /etc/netbox/config/netbox-plugins.py
           name: netbox-plugins
           subPath: netbox-plugins.py
@@ -100,12 +100,12 @@ spec:
         persistentVolumeClaim:
           claimName: netbox-media-pvc
           readOnly: false
-      - name: ldap-config
-        configMap:
-          name: netbox-configmap
-          items:
-            - key: ldap_config.py
-              path: ldap_config.py
+      #- name: ldap-config
+      #  configMap:
+      #    name: netbox-configmap
+      #    items:
+      #      - key: ldap_config.py
+      #        path: ldap_config.py
       - name: netbox-plugins
         configMap:
           name: startup-configmap
