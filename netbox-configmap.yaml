@@ -22,8 +22,8 @@ data:
   MEDIA_ROOT: /opt/netbox/netbox/media
   METRICS_ENABLED: "true"
   NETBOX_USERNAME: guest
-  REDIS_HOST: myredis-master
-  REDIS_CACHE_HOST: myredis-master
+  REDIS_HOST: myredis-master.default.svc
+  REDIS_CACHE_HOST: myredis-master.default.svc
   REDIS_PORT: "6379"
   REDIS_CACHE_PORT: "6379"
   REDIS_DATABASE: "0"
