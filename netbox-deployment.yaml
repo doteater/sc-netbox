@@ -163,7 +163,7 @@ spec:
       #      path: napalm_password
       - name: redis-password
         secret:
-          secretName: netbox-redis
+          secretName: netbox-redis-secret
           items:
           - key: redis-password
             path: redis_password
