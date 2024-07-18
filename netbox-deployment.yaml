@@ -165,7 +165,7 @@ spec:
         secret:
           secretName: netbox-redis-secret
           items:
-          - key: redis-password
+          - key: password
             path: redis_password
       - name: secret-key
         secret:
