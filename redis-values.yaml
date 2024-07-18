@@ -399,7 +399,7 @@ master:
     ## If set to "-", storageClassName: "", which disables dynamic provisioning
     ## If undefined (the default) or set to null, no storageClassName spec is set, choosing the default provisioner
     ##
-    storageClass: "rook-ceph-block" #changeme
+    ### storageClass: "local-path" #commented, using default
     ## @param master.persistence.accessModes Persistent Volume access modes
     ##
     accessModes:
