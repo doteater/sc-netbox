@@ -21,7 +21,7 @@ spec:
         cpu: 101m
         memory: 128Mi
       redisSecret:
-        name: redis-secret
+        name: netbox-redis-secret
         key: password
         # imagePullSecrets:
         #   - name: regcred
