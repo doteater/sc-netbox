@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: netbox-cert
+  namespace: netbox
+spec:
+  dnsNames:
+    - netbox.sentracam.net
+  secretName: netbox-tls
+  issuerRef:
+    name: letsencrypt-cluster-issuer
+    kind: ClusterIssuer
